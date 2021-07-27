@@ -5,6 +5,7 @@
 - About and Idea
 - Domains
 - Events
+- Board
 - Family
 - Gallery
 - Footer
