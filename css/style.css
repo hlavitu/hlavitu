@@ -4,11 +4,75 @@
 }
 
 @font-face {
-    font-family: 'Chhatrapati';
-    src: url('../fonts/AMS/Chhatrapati/Regular.ttf') format('truetype');
+    font-family: Chhatrapati;
+    src: url(../fonts/AMS\ Chhatrapati\ Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Manthan';
-    src: url('../fonts/AMS/Manthan/Regular.ttf') format('truetype');
+    font-family: Manthan;
+    src: url(../fonts/AMS\ Manthan\ Regular.ttf);
 }
+
+   .bg{
+      background-size: cover;
+
+      
+      width: 100%;
+      height: 150vh;
+	
+  
+      position: relative;
+      
+      
+    
+    }
+
+    .topnav a {
+
+      float: right;
+      display: flex;
+      color:white;
+      padding: 14px 16px;
+      text-decoration: none;
+      position: relative;
+      }
+    .topnav a:hover {
+        color:gray;
+      }
+
+    h1{
+        font-family: chhatrapati ;
+        font-size: 60px;
+        text-align: center;
+        color:white;
+        position: absolute;
+        position: absolute;
+        top: 80%;
+        left:30%;    
+    }
+
+    h5{
+        
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        color:white;
+        font-family:sans-serif;
+        
+    }
+    .HLA{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        
+    
+    } 
+    h2{
+
+        font-family: Manthan ;
+        text-align: center;
+        color:black;
+        font-size: 60px;
+    
+     }
+    
