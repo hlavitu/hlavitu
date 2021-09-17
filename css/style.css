@@ -27,7 +27,7 @@ html {
 }
 
 .bg img {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 
@@ -89,4 +89,120 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.ex {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.first,
+.second {
+    width: 50%;
+    height: 100%;
+}
+
+.Intro {
+    font-family: Manthan;
+    position: absolute;
+    width: 775px;
+    height: 113px;
+    left: 332px;
+    top: 943px;
+}
+
+.Intro h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.first h4 {
+    position: absolute;
+    width: 592px;
+    height: 500px;
+    left: 60px;
+    top: 1133px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+}
+
+.second {
+    background-image: url("/images/about.png");
+    position: absolute;
+    width: 650px;
+    height: 600.52px;
+    left: 800px;
+    top: 1063.33px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ex2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.Third,
+.fourth {
+    width: 50%;
+    height: 100%;
+}
+
+.Intro_1 {
+    font-family: Manthan;
+    position: absolute;
+    width: 781px;
+    height: 113px;
+    left: 329px;
+    top: 1705px;
+}
+
+.Intro_1 h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.fourth h4 {
+    position: absolute;
+    width: 566px;
+    height: 439px;
+    left: 734px;
+    top: 1862px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+}
+
+.Third {
+    background-image: url("/images/idea.png");
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 139px;
+    top: 1862px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ex3 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ex3 div {
+    height: 500px;
+    width: 500px;
+    background-color: blue;
 }
