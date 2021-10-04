@@ -9,17 +9,13 @@
 }
 
 @font-face {
-    font-family: Chhatrapati;
-    src: url(../fonts/AMS\ Chhatrapati\ Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Manthan;
-    src: url(../fonts/AMS\ Manthan\ Regular.ttf);
+    font-family: Indu;
+    src: url(../fonts/AMS\ Indu.ttf) format('truetype');
 }
 
 .hindi{
-    font-family: Chhatrapati;
+    font-family: Indu;
+    font-weight: 600;
 }
 
 ::-webkit-scrollbar{
@@ -32,6 +28,7 @@
 
 #nav{
     background: url(/images/bg.png);
+    opacity: 0.9;
     position: fixed;
     height: 80px;
     width: 100%;
@@ -131,9 +128,8 @@ nav>ul>li>a:active{
 
 .center>h1{
     color: #f5f5f5;
-    font-size: 60px;
-    position: relative;
-    margin-top: -15%;
+    font-size: 100px;
+    margin-top: -20%;
 }
 
 .center>a{
@@ -152,11 +148,11 @@ nav>ul>li>a:active{
         margin: 0 -100%;
     }
     .center>h1{
-        font-size: 40px;
+        font-size: 65px;
         margin-top: -30%;
     }
     .center>a{
-        margin-top: 0;
+        margin-top: 5%;
         font-size: 40px;
     }
 }
@@ -166,13 +162,14 @@ nav>ul>li>a:active{
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    height: 40vh;
+    height: 10%;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 80px;
     padding: 20px 0;
     text-align: center;
+    font-weight: 400;
 }
 
 /*#about>.content{
@@ -199,7 +196,7 @@ h2{
         width: 75%;
     }
     h2{
-        font-size: 28px;
+        font-size: 50px;
     }
 }
 
@@ -219,7 +216,7 @@ h2{
 }
 
 .single{
-    margin: auto 34.5%;
+    margin: auto 34.7%;
 }
 
 .flip-card {
@@ -286,39 +283,56 @@ h2{
     height: 350px;
     float: left;
     width: 25%;
-    padding: 15px 20px;
+    padding: 25px;
     margin: 15px 4%;
     color: #fff;
     border-radius: 25px;
     text-align: left;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    -moz-transition:all 0.5s;
 }
 
 .card>h3{
-    font-size: 30px;
+    font-size: 25px;
+    margin-top: 75%;
 }
+
+.card
 
 .card>p{
     font-size: 20px;
+    font-weight: 800;
+}
+
+.card0{
+    background: url(/images/maam.png);
+    background-color: #303030;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .card1{
     background: url(/images/RAJAT\ TIWARI.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 30%;
 }
 
 .card2{
     background: url(/images/Sumit.jpg);
-    background-size: 125%;
+    background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
 }
 
 .card3{
     background: url(/images/Anukriti\ Singh.jpg);
-    background-size: 120%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 50% 30%;
 }
 
 .card4{
@@ -364,7 +378,7 @@ h2{
 }
 
 .card11{
-    background: url(/images/Simran.jpeg);
+    background: url(/images/SIMRAN.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -372,7 +386,7 @@ h2{
 
 .card12{
     background: url(/images/AnushiSaxena.jpg);
-    background-size: 125%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -387,6 +401,19 @@ h2{
     background: url(/images/Gagan\ Chordia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.card:hover{
+    background-size: 120%;
+}
+
+.card0:hover{
+    background-size: 100%;
+}
+
+.card1:hover,
+.card3:hover{
+    background-size: 175%;
 }
 
 @media(max-width:757px){
@@ -404,6 +431,71 @@ h2{
     .single{
         margin: auto;
     }
+    .card:hover,
+    .card1:hover,
+    .card3:hover,
+    .card10:hover{
+        background-size: cover;
+    }
+}
+
+#contact{
+    background: url(/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact>h3{
+    font-size: 70px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.contDet,
+.follow{
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.contDet>h4{
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+.contDet>a{
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 25px 10px;
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+.contDet>i{
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.contDet>a:hover{
+    text-decoration: underline;
+}
+
+.follow>a{
+    color: #f5f5f5;
+    font-size: 25px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.follow>a:hover{
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #303030;
+}
+
+#contact>div>p{
+    color: #f5f5f5;
+    text-align: center;
+    padding: 15px;
 }
 
 
