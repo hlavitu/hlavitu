@@ -354,7 +354,7 @@ h2{
 }
 
 .card7{
-    background: url(/images/Aabir.jpeg);
+    background: url(/images/Aabir.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -408,7 +408,7 @@ h2{
 }
 
 .card0:hover{
-    background-size: 100%;
+    background-size: 90%;
 }
 
 .card1:hover,
