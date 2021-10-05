@@ -87,6 +87,13 @@ nav>ul>li>a:active{
     z-index: 999;
 }
 
+.toTop>a,
+.toTop>a:hover,
+.toTop>a:visited,
+.toTop>a:active{
+    color: #000;
+}
+
 @media(max-width: 1325px){
     .logo{
         font-size: 17px;
