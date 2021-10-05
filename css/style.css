@@ -77,6 +77,16 @@ nav>ul>li>a:active{
     display: none;
 }
 
+.toTop{
+    padding: 10px;
+    background: #f5f5f5;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
 @media(max-width: 1325px){
     .logo{
         font-size: 17px;
@@ -268,7 +278,7 @@ h2{
 }
 
 .back>h3{
-    padding: 15px;
+    padding: 10px;
 }
 
 .row:after {
@@ -299,8 +309,6 @@ h2{
     margin-top: 75%;
 }
 
-.card
-
 .card>p{
     font-size: 20px;
     font-weight: 800;
@@ -312,6 +320,8 @@ h2{
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: top;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card1{
@@ -319,6 +329,8 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card2{
@@ -326,55 +338,76 @@ h2{
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card3{
     background: url(/images/Anukriti\ Singh.jpg);
-    background-size: cover;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: 50% 30%;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card4{
     background: url(/images/Keshav\ Gupta.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card5{
     background: url(/images/Shivangi\ Sharma.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card6{
     background: url(/images/Adisha.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card7{
     background: url(/images/Aabir.jpg);
     background-size: cover;
+    background-position: 40% 30%;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
+
 }
 
 .card8{
     background: url(/images/Hirwa\ Oza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card9{
     background: url(/images/aditya\ kakkar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card10{
     background: url(/images/Shivya\ Shukla.jpg);
-    background-size: cover;
+    background-size: 150%;
     background-repeat: no-repeat;
+    background-position: 50% 30%;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card11{
@@ -382,6 +415,8 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card12{
@@ -389,40 +424,63 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card13{
     background: url(/images/Akhilendra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card14{
     background: url(/images/Gagan\ Chordia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter .23s ease-in-out;
 }
 
 .card:hover{
-    background-size: 120%;
+    filter: grayscale(0%);
 }
 
-.card0:hover{
-    background-size: 90%;
+#event{
+    width: 800px;
 }
 
-.card1:hover,
-.card3:hover{
-    background-size: 175%;
+.event{
+    width: 300px;
+    height: 200px;
+    float: left;
+    width: 25%;
+    padding: 25px;
+    margin: 0 4%;
+}
+
+#events>p{
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+}
+
+.event>img{
+    width: 290px;
+    height: 190px;
 }
 
 @media(max-width:757px){
     #domains, 
-    #board{
+    #board,
+    #events{
         margin: 1% 0;
     }
     .flip-card,
-    .card {
+    .card,
+    .event {
         width: 95%;
         display: block;
         margin-bottom: 15px;
@@ -430,12 +488,6 @@ h2{
     .row2, 
     .single{
         margin: auto;
-    }
-    .card:hover,
-    .card1:hover,
-    .card3:hover,
-    .card10:hover{
-        background-size: cover;
     }
 }
 
