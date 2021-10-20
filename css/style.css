@@ -115,6 +115,7 @@ nav>ul>li{
     display: inline-block;
     line-height: 80px;
     margin: 0 15px;
+    transition: all 0.5s ease;
 }
 
 nav>ul>li>a,
@@ -123,6 +124,11 @@ nav>ul>li>a:hover,
 nav>ul>li>a:active{
     color: #f5f5f5;
     font-size: 20px;
+}
+
+nav>ul>li:hover{
+    z-index: 99999;
+    transform: scale(1.15);
 }
 
 .checkbtn{
@@ -204,46 +210,45 @@ nav>ul>li>a:active{
     text-align: center;
 }
 .center>img{
-    transform: scale(.65);
+    transform: scale(.6);
     position: relative;
     margin-top: -3%;
 }
 
 .center>h1{
     color: #f5f5f5;
-    font-size: 100px;
+    font-size: 90px;
     margin-top: -10%;
 }
 .center>p{
     color: #f5f5f5;
-    font-size: 60px;
-    margin-top: -2%;
+    font-size: 50px;
 }
 
 .center>a{
     color: #f5f5f5;
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 3%;
 }
 
 @media(max-width:767px){
     .center{
-        width: 400px;
+        width: 380px;
     }
     .center>img{
         position: relative;
-        transform: scale(0.5);
+        transform: scale(0.6);
         margin: 0 -100%;
-        margin-top: -10%;
     }
     .center>h1{
         font-size: 50px;
-        margin-top: -35%;
+        margin-top: -30%;
     }
     .center>p{
         font-size: 35px;
     }
     .center>a{
-        margin-top: 8%;
+        margin-top: 7%;
         font-size: 30px;
     }
 }
@@ -262,7 +267,7 @@ nav>ul>li>a:active{
 
 h2{
     font-size: 80px;
-    margin-top: 3%;
+    margin-top: 1%;
     padding: 20px 0;
     text-align: center;
     font-weight: 400;
@@ -382,10 +387,8 @@ h2{
     color: #fff;
     border-radius: 25px;
     text-align: left;
-    transition:all 0.5s;
-    -webkit-transition:all 0.5s;
-    -o-transition:all 0.5s;
-    -moz-transition:all 0.5s;
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
 }
 
 .card>h3{
@@ -398,14 +401,20 @@ h2{
     font-weight: 800;
 }
 
+.card>p>a,
+.card>p>a:hover,
+.card>p>a:visited,
+.card>p>a:active{
+    color: #fff;
+    font-weight: 800;
+}
+
 .card0{
     background: url(/images/maam.png);
     background-color: #303030;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: top;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card1{
@@ -413,8 +422,6 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card2{
@@ -422,8 +429,6 @@ h2{
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card3{
@@ -431,32 +436,24 @@ h2{
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: 50% 30%;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card4{
     background: url(/images/Keshav\ Gupta.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card5{
     background: url(/images/Shivangi\ Sharma.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card6{
     background: url(/images/Adisha.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card7{
@@ -464,8 +461,6 @@ h2{
     background-size: cover;
     background-position: 40% 30%;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 
 }
 
@@ -473,16 +468,12 @@ h2{
     background: url(/images/Hirwa\ Oza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card9{
     background: url(/images/aditya\ kakkar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card10{
@@ -490,8 +481,6 @@ h2{
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: 50% 30%;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card11{
@@ -499,8 +488,6 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card12{
@@ -508,28 +495,23 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card13{
     background: url(/images/Akhilendra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card14{
     background: url(/images/Gagan\ Chordia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: filter .23s ease-in-out;
 }
 
 .card:hover{
     filter: grayscale(0%);
+    transition: all 1s ease-in-out;
 }
 
 .event{
@@ -550,6 +532,12 @@ h2{
 .event>img{
     width: 290px;
     height: 190px;
+    transition: all 0.5s ease;
+}
+
+.event>img:hover{
+    transform: scale(1.25);
+    z-index: 99;
 }
 
 @media(max-width:757px){
@@ -600,6 +588,7 @@ h2{
     padding: 25px 10px;
     font-size: 25px;
     font-family: 'Montserrat';
+    transition: all 0.5s ease;
 }
 
 .contDet>i{
@@ -616,10 +605,11 @@ h2{
     font-size: 25px;
     margin: 5px;
     padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
 }
 
 .follow>a:hover{
-    border-radius: 50%;
     background: #f5f5f5;
     color: #303030;
 }
