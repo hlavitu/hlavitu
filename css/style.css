@@ -204,14 +204,20 @@ nav>ul>li>a:active{
     text-align: center;
 }
 .center>img{
-    transform: scale(.75);
+    transform: scale(.65);
     position: relative;
+    margin-top: -3%;
 }
 
 .center>h1{
     color: #f5f5f5;
     font-size: 100px;
-    margin-top: -8%;
+    margin-top: -10%;
+}
+.center>p{
+    color: #f5f5f5;
+    font-size: 60px;
+    margin-top: -2%;
 }
 
 .center>a{
@@ -225,15 +231,19 @@ nav>ul>li>a:active{
     }
     .center>img{
         position: relative;
-        transform: scale(0.6);
+        transform: scale(0.5);
         margin: 0 -100%;
+        margin-top: -10%;
     }
     .center>h1{
         font-size: 50px;
-        margin-top: -30%;
+        margin-top: -40%;
+    }
+    .center>p{
+        font-size: 40px;
     }
     .center>a{
-        margin-top: 15%;
+        margin-top: 7.5%;
         font-size: 40px;
     }
 }
