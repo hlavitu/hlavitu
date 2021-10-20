@@ -237,14 +237,14 @@ nav>ul>li>a:active{
     }
     .center>h1{
         font-size: 50px;
-        margin-top: -40%;
+        margin-top: -35%;
     }
     .center>p{
-        font-size: 40px;
+        font-size: 35px;
     }
     .center>a{
-        margin-top: 7.5%;
-        font-size: 40px;
+        margin-top: 8%;
+        font-size: 30px;
     }
 }
 
@@ -252,7 +252,6 @@ nav>ul>li>a:active{
 #idea{
     text-align: center;
     height: 10%;
-    background-color: #f3f2f2;
 }
 
 #about>div>div>p,
@@ -263,6 +262,7 @@ nav>ul>li>a:active{
 
 h2{
     font-size: 80px;
+    margin-top: 3%;
     padding: 20px 0;
     text-align: center;
     font-weight: 400;
@@ -286,10 +286,6 @@ h2{
 }*/
 
 @media(max-width:757px){
-    #about, 
-    #idea{
-        height: 10%;
-    }
     h2{
         padding: 5px;
         font-size: 50px;
@@ -298,9 +294,9 @@ h2{
 
 #domains,
 #board{
+    margin: 0 auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #f3f2f2;
 }
 
 .row{
@@ -535,10 +531,6 @@ h2{
     filter: grayscale(0%);
 }
 
-#events{
-    background-color: #f3f2f2;
-}
-
 .event{
     width: 300px;
     height: 200px;
@@ -563,12 +555,12 @@ h2{
     #domains, 
     #board,
     #events{
-        margin: 1% 0;
+        margin: auto;
     }
     .flip-card,
     .card,
     .event {
-        width: 95%;
+        width: 90%;
         display: block;
         margin-bottom: 15px;
     }
