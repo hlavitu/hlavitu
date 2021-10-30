@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Indu;
+    src: url(../../fonts/AMS\ Indu.ttf) format('truetype');
+}
+
+.hindi{
+    font-family: Indu;
+    font-weight: 600;
+}
