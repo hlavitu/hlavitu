@@ -258,10 +258,16 @@ nav>ul>li:hover{
     height: 10%;
 }
 
-#about>.content>div>p,
-#idea>.content>div>p{
+#about>.content,
+#idea>.content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about>div>div>p,
+#idea>div>div>p{
     width: 75%;
-    margin: 0 30%;
+    margin: 2% auto;
     font-size: 20px;
     line-height: 35px;
 }
@@ -306,9 +312,9 @@ h2{
     .content>div{
         column-count: 1;
     }
-    #about>div>div>p,
-    #idea>div>div>p{
-        margin: 0 auto;
+    #about>.content,
+    #idea>.content{
+        width: 90%;
     }
 }
 
