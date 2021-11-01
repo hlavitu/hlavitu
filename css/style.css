@@ -14,8 +14,7 @@
 }
 
 .hindi{
-    font-family: Indu;
-    font-weight: 600;
+    font-family: 'Eczar', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -216,18 +215,18 @@ nav>ul>li:hover{
 
 .center>h1{
     color: #f5f5f5;
-    font-size: 90px;
-    margin-top: -10%;
+    font-size: 80px;
+    margin-top: -7%;
 }
 .center>p{
     color: #f5f5f5;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .center>a{
     color: #f5f5f5;
     font-size: 40px;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 @media(max-width:767px){
@@ -260,7 +259,7 @@ nav>ul>li:hover{
 
 #about>.content,
 #idea>.content{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
