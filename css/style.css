@@ -42,39 +42,27 @@
 }
 
 .loader{
-    border-top: 10px solid #f3f2f2;
-    border-radius: 50%;
     width: 480px;
     height: 480px;
     position: absolute;
     top: calc(30vh - 75px);
     left: calc(37vw - 75px);
-    animation: spinloader 2s linear infinite;
+    /*animation: spinloader 2s linear infinite;*/
 }
 
 .loader>img{
     height: 480px;
     width: 480px;
-    animation: spinlogo 2s linear infinite;
+    animation: spinloader 2s linear infinite;
 }
 
 @keyframes spinloader {
     0% {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
 
     100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spinlogo {
-    0% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
+        transform: rotateY(360deg);
     }
 }
 
