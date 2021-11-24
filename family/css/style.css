@@ -158,10 +158,11 @@ iframe{
 
 @media screen and (max-width: 768px) {
     .vid{
-        height: 90vh;
+        height: 80vh;
     }
     iframe{
-        height: 60%;
+        height: 50%;
         width: 90%;
+        border-radius: 10px;
     }
 }
