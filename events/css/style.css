@@ -17,6 +17,10 @@
     background: url(/images/bg.png);
 }
 
+.hindi{
+    font-family: 'Eczar', sans-serif;
+}
+
 #nav{
     background: url(/images/bg.png);
     height: 80px;
@@ -172,6 +176,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .events{
+        height: 800px;
+    }
     .blog-slider{
         min-height: 500px;
         height: auto;
@@ -321,6 +328,9 @@
     color: #f3f2f2;
     margin-bottom: 30px;
     line-height: 1.5em;
+}
+.blog-slider__text>.hindi{
+    font-size: 20px;
 }
 
 .blog-slider .swiper-container-horizontal>.swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction{
