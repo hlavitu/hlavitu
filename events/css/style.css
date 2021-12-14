@@ -74,7 +74,7 @@
     padding: 25px 10px;
     font-size: 25px;
     font-family: 'Montserrat';
-    transition: all 0.5s ease;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -102,16 +102,26 @@
 .follow>a{
     color: #f5f5f5;
     font-size: 35px;
-    transition: all 0.5s ease;
+    transition: all 0.5s;
     padding: 12px;
     margin: 10px auto;
     margin-right: 20px;
     border-radius: 50%;
 }
 
-.follow>a:hover{
-    background-color: #f5f5f5;
-    color: #303030;
+.ig:hover{
+    text-shadow: -5px -5px 20px #5b51db, 5px -5px 20px #c13584, 5px 5px 20px #f56040, -5px 5px 20px #fcaf45;
+    transition: all 0.5s;
+}
+
+.fb:hover{
+    transition: all 0.5s;
+    text-shadow: 0 0 40px #00f;
+}
+
+.yt:hover{
+    transition: all 0.5s;
+    text-shadow: 0 0 40px #f00;
 }
 
 #contact>p{
