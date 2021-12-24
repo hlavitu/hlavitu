@@ -55,31 +55,72 @@
     column-count: 3;
 }
 
-.contDet,
-.follow{
+#imageCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageCont>img{
+    width: 300px;
+    height: 300px;
+}
+
+.links{
+    color: #f0f0f0;
+}
+
+.links>ul{
+    display: block;
+    list-style: none;
+}
+
+.links>ul>li{
+    padding: 7px 0;
+}
+
+.links>ul>li>a,
+.links>ul>li>a:hover,
+.links>ul>li>a:active,
+.links>ul>li>a:visited{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links{
     color: #f5f5f5;
-    padding: 50px 100px;
+    padding: 20px 100px;
     text-align: left;
 }
 
+.contDet{
+    padding-top: 20px;
+}
+
+.contDet,
+.follow{
+    color: #f0f0f0;
+}
+
 .contDet>h4,
-.follow>h4{
-    font-size: 40px;
-    padding-top: 50px;
+.follow>h4,
+.links>h4{
+    font-size: 30px;
 }
 
 .contDet>a{
     color: #f5f5f5;
     text-decoration: none;
     padding: 25px 10px;
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Montserrat';
     transition: all 0.5s;
     cursor: pointer;
 }
 
 .contDet>i{
-    font-size: 25px;
+    font-size: 24px;
     padding: 20px 0;
 }
 
@@ -87,30 +128,19 @@
     text-decoration: underline;
 }
 
-#imageCont{
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#imageCont>img{
-    width: 350px;
-    height: 350px;
-}
-
 .follow>a{
     color: #f5f5f5;
-    font-size: 35px;
+    font-size: 30px;
     transition: all 0.5s;
-    padding: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
     margin: 10px auto;
     margin-right: 20px;
     border-radius: 50%;
 }
 
 .ig:hover{
-    text-shadow: -5px -5px 20px #5b51db, 5px -5px 20px #c13584, 5px 5px 20px #f56040, -5px 5px 20px #fcaf45;
+    text-shadow: -5px -5px 10px #5b51db, 5px -5px 10px #c13584, 5px 5px 10px #f56040, -5px 5px 10px #fcaf45;
     transition: all 0.5s;
 }
 
@@ -137,15 +167,23 @@
         width: 100%;
         margin: 0 auto;
     }
+    .links{
+        text-align: center;
+    }
+    #extra{
+        text-align: center;
+    }
     .contDet,
     .follow{
         padding: 10px 25px;
         margin: 0 auto;
-        text-align: center;
     }
     .contDet>h4,
     .follow>h4{
         padding-top: 10px;
+    }
+    .follow>a{
+        padding: 20px;
     }
     #imageCont{
         padding-top: 0;
