@@ -357,7 +357,7 @@ h2{
     padding: 0;
 }
 
-.digis{
+.row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,7 +466,7 @@ h2{
         height: 200px;
         padding-top: 20px;
     }
-    .digis{
+    .row{
         display: block;
         padding: 0 7px;
     }
@@ -517,6 +517,7 @@ h2{
 .front {
     background-color: #f5f5f5;
     color: black;
+    text-align: center;
 }
 
 .back {
@@ -585,46 +586,47 @@ h2{
 }
 
 .card1{
-    background: url(/images/RAJAT\ TIWARI.jpg);
+    background: url(/images/Khyati\ Tripathi.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30%;
 }
 
 .card2{
-    background: url(/images/Sumit.jpg);
+    background: url(/images/jatin.png);
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
 }
 
 .card3{
-    background: url(/images/Anukriti\ Singh.jpg);
-    background-size: 150%;
+    background: url(/images/AnanyaDas.jpeg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 30%;
 }
 
 .card4{
-    background: url(/images/Keshav\ Gupta.jpg);
+    background: url(/images/vivek.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 100% 0;
 }
 
 .card5{
-    background: url(/images/Shivangi\ Sharma.jpeg);
-    background-size: cover;
+    background: url(/images/nikhil.jpg);
+    background-size: 200%;
     background-repeat: no-repeat;
+    background-position: 50% 20%;
 }
 
 .card6{
-    background: url(/images/Adisha.jpeg);
+    background: url(/images/namandeep.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card7{
-    background: url(/images/aabir.jpg);
+    background: url(/images/Ishu.jpg);
     background-size: cover;
     background-position: 40% 30%;
     background-repeat: no-repeat;
@@ -632,46 +634,47 @@ h2{
 }
 
 .card8{
-    background: url(/images/Hirwa\ Oza.jpg);
+    background: url(/images/Aishwarya.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card9{
-    background: url(/images/aditya\ kakkar.jpg);
+    background: url(/images/Mansi\ Gujral.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 100%;
 }
 
 .card10{
-    background: url(/images/Shivya\ Shukla.jpg);
-    background-size: 150%;
+    background: url(/images/Shraddha.jpg);
+    background-size: 200%;
     background-repeat: no-repeat;
-    background-position: 50% 30%;
+    background-position: 50% 40%;
 }
 
 .card11{
-    background: url(/images/SIMRAN.png);
+    background: url(/images/Ritika.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card12{
-    background: url(/images/AnushiSaxena.jpg);
+    background: url(/images/muskaan.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .card13{
-    background: url(/images/Akhilendra.jpg);
+    background: url(/images/parthgoyal.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .card14{
-    background: url(/images/Gagan\ Chordia.jpg);
+    background: url(/images/VISHAL.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -691,10 +694,6 @@ h2{
         width: 90%;
         display: block;
         margin-bottom: 15px;
-    }
-    .row2, 
-    .single{
-        margin: auto;
     }
 }
 
@@ -765,20 +764,35 @@ h2{
 .contDet>a{
     color: #f5f5f5;
     text-decoration: none;
-    padding: 25px 10px;
+    padding: 25px 0 5px 0;
     font-size: 18px;
     font-family: 'Montserrat';
     transition: all 0.5s;
     cursor: pointer;
+    position: relative;
 }
 
-.contDet>i{
+.contDet>a>i{
     font-size: 24px;
     padding: 20px 0;
 }
 
-.contDet>a:hover{
-    text-decoration: underline;
+.contDet>a::after {
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 3px;
+    background-color: #f0f0f0;
+    bottom: 0;
+    left: 0;
+    transform : scaleX(0);
+    transform-origin: bottom left;
+    transition : transform 0.25s linear;
+}
+
+.contDet>a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
 
 .follow>a{
